@@ -1,11 +1,11 @@
 import React from "react";
 import "./Main.css"; // Import component-specific CSS
 import { Routes, Route } from "react-router-dom";
-import Homepage from "./Home.js"; // Create and import the Homepage component
+import Homepage from "./Header.js"; // Create and import the Homepage component
 import Specials from "./specials.js";
-import About from "./About";
-import Bookings from "./BookingPage.js";
-import Contact from "./Contact";
+import About from "./About.js";
+import Bookings from "./BookingForm.js";
+import Contact from "./Contact.js";
 function Main() {
     return (
       <main className="main-content">
