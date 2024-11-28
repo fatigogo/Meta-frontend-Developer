@@ -1,0 +1,27 @@
+/* Nav.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 10px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-item a:hover {
+    color: #ffcc00;
+  }
+  
