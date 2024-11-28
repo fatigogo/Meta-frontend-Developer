@@ -1,5 +1,11 @@
 import React from "react";
 import "./Main.css"; // Import component-specific CSS
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./Home.js"; // Create and import the Homepage component
+import Specials from "./specials.js";
+import About from "./About";
+import Bookings from "./BookingPage.js";
+import Contact from "./Contact";
 function Main() {
     return (
       <main className="main-content">
@@ -11,6 +17,13 @@ function Main() {
           <h2>Menu</h2>
           <p>Explore our diverse offerings!</p>
         </section>
+        <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/specials" element={<Specials />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/Bookings" element={<Bookings />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       </main>
     );
   }

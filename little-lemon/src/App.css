@@ -1,4 +1,11 @@
 /* App.css */
+:root {
+  --font-family: 'Arial', sans-serif;
+  --heading-color: #333; /* Dark color for headings */
+  --text-color: #555; /* Lighter shade for paragraphs */
+  --accent-color: #ffcc00; /* Accent for spans or highlights */
+  --base-line-height: 1.6; /* Line height for readability */
+}
 
 /* Flexbox container */
 .app-container {
@@ -69,5 +76,17 @@ main {
 @media (max-width: 768px) {
   nav {
     flex-direction: column;  /* Stack nav items vertically on smaller screens */
+    text-align: center;
   }
+}
+button {
+  border-radius: 8px;
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+
+img {
+  border-radius: 8px;
 }
